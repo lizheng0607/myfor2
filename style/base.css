@@ -1,0 +1,163 @@
+.top{position: relative;}
+.top .first{position: absolute;left: 50px;top: 10px;}
+
+
+#q2{position: absolute;left:370px;top:30px;}
+#q3{position: absolute;left:370px;top:65px; width: 100px; }
+#q4{position: absolute;left: 370px;top: 95px;width: 100px; }
+#q5{position: absolute;left: 370px;top: 125px;width: 100px; }
+#q6{position: absolute;left: 370px;top: 155px;width: 100px; }
+#q7{position: absolute;left: 370px;top: 185px;width: 100px; }
+#q8{position: absolute;left: 370px;top: 235px;width: 100px; }
+#q8_1{position: absolute;left: 480px;top: 235px;width: 30px; }
+#q9{position: absolute;left: 370px;top: 265px;width: 100px; }
+#q10{position: absolute;left: 370px;top: 295px;width: 100px; }
+#q11{position: absolute;left: 370px;top: 325px;width: 100px; }
+#q12{position: absolute;left: 370px;top: 355px;width: 100px; }
+
+
+/*#hr1{position: absolute;left: 370px;top: 5px;,width:120px;height:2px;border:none dotted #185598;}*/
+/*#hr1{height:2px;border:none;border-top:2px dotted #185598;}*/
+#hr1{height:1px;border:none;border-top:1px dotted #185598;width: 100px; position: absolute;left: 370px;top: 213px;}
+
+
+#t_left{position: absolute;left: 50px;top: 30px;width:280px;height: 350px;border: 2px; font-size:20px;  }
+#t_right_1{position: absolute;left: 520px;top: 30px;width:230px;height: 350px;border: 2px dotted;font-size:18px;}
+#t_right_2{position: absolute;left: 820px;top: 30px;width:230px;height: 350px;border: 2px dotted;font-size:20px;}
+#t_right_3{position: absolute;left: 1120px;top: 30px;width:230px;height: 350px;border: 2px dotted;font-size:20px;}
+#t_below_left{position: absolute;left: 50px;top: 430px;width:400px;height: 180px;border: 2px solid black}
+#t_below_right1{position: absolute;left: 520px;top: 430px;width:350px;height: 180px;border: 2px solid black}
+#t_below_right2{position: absolute;left: 920px;top: 430px;width:350px;height: 180px;border: 2px solid black}
+/*//////////////////////////////////////////////////*/
+ .active {
+            display: block;
+        }
+
+.disable {
+            display: none;
+            /*display: block;*/
+        }
+
+#popup {
+            position: absolute;
+            left: 0;
+            top: 0;
+            padding: 20px;
+            border-radius: 10px;
+            /*box-shadow: 0 0 5px;*/
+            background-color:#FFF;
+            
+            float: left;
+        }
+#popup1{
+            position: absolute;
+            left: 0;
+            top: 0;
+            padding: 20px;
+            border-radius: 10px;
+            /*box-shadow: 0 0 5px;*/
+            background-color:#FFF;
+            
+            float: left;
+        }
+.table-cell {
+            width: 100%;
+        }
+
+td {
+    text-align: center;
+}
+
+tr table tr td {
+    width: 30px;
+    height: 25px;
+}
+
+/*----------------------*/
+ .text-wrapper {
+        width: 100px;
+        height: 20px;
+        float: left;
+        padding-right: 20px;
+    }
+
+    #btn {
+        float: left;
+        height: 20px;
+    }
+
+    .text-wrapper {
+        position: relative;
+    }
+
+    #input, #input-text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100px;
+        height: 20px;
+        border: 1px solid #000;
+        padding: 1px;
+    }
+  
+
+    .input {
+        display: block;
+    }
+
+    .input-text {
+        display: none;
+    }
+
+    .disappear {
+        display: none;
+    }
+
+    .display {
+        display: block;
+    }
+
+    .selected {
+        background-color: cyan;
+    }
+
+    canvas {
+        float: left;
+    }
+
+    .rule_text-wrapper {
+        float: left;
+    }
+
+      #rule_text{
+        /*position: absolute;*/
+        /*float: left;*/
+        /*top: 410;
+        left: 1040;*/
+        width: 285px;
+        height: 305px;
+        border: 1px solid #000;
+        padding: 1px;
+
+
+    }
+    #state1{
+        width: 135px;
+        height: 193px;
+        border: 1px solid #000;
+        padding: 1px;
+
+
+    }
+    #state2{
+        width: 135px;
+        height: 193px;
+        border: 1px solid #000;
+        padding: 1px;
+
+
+    }
+
+    .wrapper button {
+        float: left;
+    }

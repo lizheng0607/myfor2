@@ -1,0 +1,146 @@
+<html >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="style/base.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body bgcolor="#C0C0C0" onkeydown="myKeydown(event)">
+	<div class="top">
+	
+
+  
+  <!--<button id="q2" onclick="show2()">open file</button>-->
+
+
+  <button id="q3" onclick="show3()" >消除左递归</button>
+  <button id="q4" onclick="show4()" >FIRST</button>
+  <button id="q5" onclick="show5()" >FOLLOW</button>
+  <button id="q6" onclick="show6()" >LL(1)</button>
+  <button id="q7" onclick="show7()" >预测分析表</button>
+  <button id="q8" onclick="show8()" >LR(0)</button>
+  <!--<button id="q8_1" onclick="show8_1()">分析表</button>-->
+  <button id="q9" onclick="show9()" >SLR</button>
+  <button id="q10"onclick="show10()" >LR(1)</button>
+  <button id="q11"onclick="show11()" >LALR</button>
+  <button id="q12"onclick="show12()" >分析表</button>
+  
+  <hr id="hr1"/>
+  <!--hr style=" height:2px;border:none;border-top:2px dotted #185598;" /-->	
+
+	<textarea  id="t_left"  ></textarea>
+
+	<textarea id="t_right_1" readonly>		
+	</textarea>
+
+	<textarea id="t_right_2" readonly>		
+	</textarea>
+	<textarea id="t_right_3" readonly>		
+	</textarea>
+	<textarea id="t_below_left" readonly  onclick="myClick(this)" >		
+	</textarea>
+
+	<textarea id="t_below_right1"  readonly>		
+	</textarea>
+  <textarea id="t_below_right2" readonly>		
+	</textarea>
+
+	
+  <div id="popup" class="disable" draggable="true">
+        
+        <!-- 输入语句<input id="inputSomeThing" oninput="getInput(this.value)"></input>  -->
+         <!--输入<input id="numOfTranIO"></input>  -->
+        <table  align="left" border="1" colspan="1">
+            <tbody id="tbody">
+            </tbody>
+        </table>
+        
+        <!--绘图部分-->
+       <!-- <input onclick="goLR()" value="GO" type="button" />  -->
+        
+        <canvas id="myCanvas" width="1000" height="500"  
+            style="border:1px solid #000000;">  
+        </canvas>  
+       
+        
+        
+
+
+
+    <div class="rule_text-wrapper">
+    <div  id="rule_text" >
+        <div class="rule-item"><span  style="font-size:12px">0状态0入栈；</span></div>
+        <div class="rule-item"><span style="font-size:12px">1把下一个输入符号读进a中；</span></div>
+        <div class="rule-item"><span style="font-size:12px">2DO</span></div>
+        <div class="rule-item"><span style="font-size:12px">3   把栈顶元素读进Sm中；</span></div>
+        <div class="rule-item"><span style="font-size:12px">4   IF ACTION[Sm,a]=移进</span></div>
+        <div class="rule-item"><span style="font-size:12px"> 5      s=GOTO[Sm,a];</span></div>
+        <div class="rule-item"><span style="font-size:12px">6       s压栈；</span></div>
+        <div class="rule-item"><span style="font-size:12px">7       读入下一个符号；</span></div>
+        <div class="rule-item"><span style="font-size:12px">8   ELSE IF ACTION[Sm,a]=归约；</span></div>
+        <div class="rule-item"><span style="font-size:12px">9       按ACTION[Sm,a]的产生式A->β归约</span></div>
+        <div class="rule-item"><span style="font-size:12px">10       |β|个状态出栈；</span></div>
+        <div class="rule-item"><span style="font-size:12px">11       GOTO[Sm-r,A]入栈；</span></div>
+        <div class="rule-item"><span style="font-size:12px">12   ELSE IF ACTION[Sm,a]=接受</span></div>
+        <div class="rule-item"><span style="font-size:12px"> 13      分析成功；</span></div>
+        <div class="rule-item"><span style="font-size:12px"> 14  ELSE</span></div>
+        <div class="rule-item"><span style="font-size:12px"> 15      报告错误</span></div>
+        <div class="rule-item"><span style="font-size:12px">16WHILE TRUE</span></div>
+    </div>		
+    <textarea id="state1" readonly></textarea>
+    <textarea id="state2" readonly></textarea>
+	</div>
+
+<!--***************************************************************************-->
+<div class="wrapper">
+        <div class="text-wrapper">
+            <input type="text" id="input" class="input">
+            <div id="input-text" class="input-text" onclick="go1()"></div>
+        </div>
+        <button id="btn" onclick="ruleGo2()">GO</button>
+        
+        <button id="close">关闭</button>
+        
+        <button onclick="draw1()">测试</button>
+      <!--<button onclick="LR_fill()">执行2</button>-->
+    </div>
+
+
+
+    </div>
+<!--**********************************-->
+<!--**********************************-->
+<!--**********************************-->
+<!--**********************************-->
+<!--**********************************-->
+<div id="popup1" class="disable" draggable="true">
+        
+        <!-- 输入语句<input id="inputSomeThing" oninput="getInput(this.value)"></input>  -->
+         <!--输入<input id="numOfTranIO"></input>  -->
+        <table  align="left" border="1" colspan="1">
+            <tbody id="tbody1">
+            </tbody>
+        </table>
+        <button id="close1">关闭</button>
+
+    </div>
+<!--**********************************-->
+<!--**********************************-->
+<!--**********************************-->
+<!--**********************************-->
+<!--**********************************-->
+
+</div>
+
+
+
+<script type="text/javascript" src="script/Top-Down.js"></script>
+<script type="text/javascript" src="script/Buttom-Up.js"></script>
+<script type="text/javascript" src="script/Others.js"></script>
+<script type="text/javascript" src="script/myCanvas.js"></script>
+
+</body>
+
+
+
+
+</html>
